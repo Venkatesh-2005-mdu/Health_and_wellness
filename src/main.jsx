@@ -5,6 +5,7 @@ import App from './App';
 import './index.css';
 import { setAuthToken } from './services/api';
 
+// If token exists on page load, set header
 const token = localStorage.getItem('token');
 setAuthToken(token);
 
